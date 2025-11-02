@@ -25,10 +25,14 @@ const { HelpRequest } = require('./models');
 const helpRequestsRouter = require('./routes/helpRequests');
 const knowledgeBaseRouter = require('./routes/knowledgeBase');
 const agentRouter = require('./routes/agent');
+const livekitRouter = require('./routes/livekit');
+const ttsRouter = require('./routes/tts');
 
 app.use('/api/help-requests', helpRequestsRouter);
 app.use('/api/knowledge-base', knowledgeBaseRouter);
 app.use('/api/agent', agentRouter);
+app.use('/api/livekit', livekitRouter);
+app.use('/api/tts', ttsRouter);
 
 // Health check
 app.get('/health', (req, res) => {

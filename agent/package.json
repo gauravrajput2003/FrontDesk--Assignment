@@ -1,0 +1,29 @@
+{
+  "name": "frontdesk-ai-agent",
+  "version": "1.0.0",
+  "description": "AI Voice Agent for Frontdesk Supervisor System",
+  "main": "agent_simulator.js",
+  "type": "module",
+  "scripts": {
+  "start": "node agent_simulator.js",
+  "test": "node agent_simulator.js test",
+  "interactive": "node agent_simulator.js interactive"
+  },
+  "keywords": [
+    "ai",
+    "voice-agent",
+    "livekit",
+    "receptionist"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "openai": "^4.20.0",
+    "livekit-client": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
